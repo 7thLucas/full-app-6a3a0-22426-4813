@@ -1,0 +1,43 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-content { width: 55%; }
+  .mode-landscape .sl-visual { width: 45%; }
+  .mode-portrait .sl-content { width: 100%; }
+  .mode-portrait .sl-visual { width: 100%; min-height: 180px; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full p-10 gap-8">
+
+    <!-- Left: content column -->
+    <div class="sl-content flex flex-col justify-between py-1">
+      <div>
+        <div class="text-xs font-bold tracking-widest text-indigo-500 uppercase mb-5">
+          Social Media Management
+        </div>
+        <h1 class="text-4xl font-black text-slate-900 leading-tight mb-5">
+          Show up<br/>without<br/>the spiral.
+        </h1>
+        <p class="text-sm text-slate-500 leading-relaxed max-w-xs">
+          Dump your ideas once a week.<br/>
+          AI drafts the posts. The app publishes them.<br/>
+          You never have to open a feed.
+        </p>
+      </div>
+
+      <div class="mt-auto pt-4">
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-visual rounded-2xl overflow-hidden bg-indigo-50 flex-1">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=minimalist%20editorial%20illustration%3A%20calm%20focused%20person%20at%20a%20clean%20modern%20desk%2C%20phone%20face%20down%20beside%20a%20laptop%2C%20soft%20morning%20light%2C%20peaceful%20no-distraction%20workspace%2C%20flat%20art%20style%2C%20soft%20indigo%20and%20cream%20palette%2C%20no%20text%2C%20no%20logos"
+        alt="Calm productive workspace"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
