@@ -1,0 +1,69 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(2, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+  .mode-landscape .sl-roi { flex-direction: row; align-items: center; justify-content: space-between; }
+  .mode-portrait .sl-roi { flex-direction: column; gap: 0.5rem; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10 gap-4">
+
+    <!-- Header -->
+    <div>
+      <div class="text-xs font-bold tracking-widest text-indigo-500 uppercase mb-1">Impact & Benefits</div>
+      <h2 class="text-3xl font-black text-slate-900 leading-tight">
+        Consistent presence. Minimal effort.
+      </h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-grid grid gap-3 flex-1">
+
+      <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+        <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Weekly Session</div>
+        <div class="text-3xl font-black text-indigo-600 mb-1">~20 min</div>
+        <div class="text-xs text-slate-600 leading-relaxed">
+          One focused session replaces scattered daily obligations.
+        </div>
+      </div>
+
+      <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+        <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Posts Published</div>
+        <div class="text-3xl font-black text-indigo-600 mb-1">5× / week</div>
+        <div class="text-xs text-slate-600 leading-relaxed">
+          Consistent daily presence, generated from a single session.
+        </div>
+      </div>
+
+      <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+        <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Time Reclaimed</div>
+        <div class="text-3xl font-black text-pink-500 mb-1">75 min/wk</div>
+        <div class="text-xs text-slate-600 leading-relaxed">
+          Versus manual drafting at ~15 min per post.
+        </div>
+      </div>
+
+      <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+        <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Daily Feed Check-ins</div>
+        <div class="text-3xl font-black text-pink-500 mb-1">Zero</div>
+        <div class="text-xs text-slate-600 leading-relaxed">
+          No scrolling. No opening the app. Presence without the pull.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ROI summary bar -->
+    <div class="bg-indigo-600 rounded-xl p-4">
+      <div class="sl-roi flex">
+        <div>
+          <div class="text-xs font-bold text-indigo-200 uppercase tracking-wide mb-1">Annual Time Saved</div>
+          <div class="text-2xl font-black text-white">65+ hours / year</div>
+        </div>
+        <div class="text-indigo-300 text-xs leading-relaxed text-right">
+          5 posts × 15 min saved × 52 weeks<br/>= 65 hours reclaimed annually
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
