@@ -1,0 +1,51 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-left { width: 52%; }
+  .mode-landscape .sl-right { width: 48%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full p-10 gap-8">
+
+    <!-- Left: problem + solution cards -->
+    <div class="sl-left flex flex-col gap-5 justify-center">
+
+      <div class="bg-red-50 rounded-2xl p-5 border border-red-100">
+        <div class="text-xs font-bold tracking-widest text-red-500 uppercase mb-2">The Problem</div>
+        <h2 class="text-xl font-bold text-slate-900 leading-snug mb-2">
+          You need the presence.<br/>You hate the platform.
+        </h2>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Reluctant posters ghost their accounts for weeks, then binge-post out of guilt.
+          The algorithm punishes inconsistency. Followers drop off.
+          Business opportunities vanish without a trace.
+        </p>
+      </div>
+
+      <div class="bg-indigo-50 rounded-2xl p-5 border border-indigo-100">
+        <div class="text-xs font-bold tracking-widest text-indigo-600 uppercase mb-2">The Solution</div>
+        <h2 class="text-xl font-bold text-slate-900 leading-snug mb-2">
+          Batch it. Schedule it.<br/>Walk away.
+        </h2>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Dump raw ideas once a week. AI drafts platform-ready posts in your voice.
+          Approve them in minutes. Automated publishing keeps you consistent —
+          without ever opening a feed.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-right rounded-2xl overflow-hidden bg-slate-50 flex-1">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=split%20editorial%20illustration%3A%20left%20half%20shows%20a%20stressed%20figure%20overwhelmed%20by%20notification%20bubbles%20and%20social%20media%20icons%20swirling%20around%2C%20right%20half%20shows%20the%20same%20figure%20calm%20and%20smiling%20with%20a%20clean%20content%20calendar%20on%20screen%2C%20minimal%20flat%20art%20style%2C%20indigo%20and%20rose%20tones%2C%20no%20text"
+        alt="Problem versus solution"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
